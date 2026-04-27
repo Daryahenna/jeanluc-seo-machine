@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pikabu.ru)",
+      "WebFetch(domain:otvet.mail.ru)",
+      "WebFetch(domain:www.reddit.com)",
+      "WebFetch(domain:www.b17.ru)",
+      "WebFetch(domain:spark.ru)"
+    ]
+  }
+}

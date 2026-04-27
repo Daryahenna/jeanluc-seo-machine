@@ -67,28 +67,7 @@ layout: default
 
   {{ content }}
 
-  {%- comment -%} FAQ accordion (renders from frontmatter `faq:` field) {%- endcomment -%}
-  {% if page.faq %}
-    <section class="faq">
-      <h2>Частые вопросы</h2>
-      {% for item in page.faq %}
-        <details class="faq-item">
-          <summary>{{ item.q }}</summary>
-          <div class="faq-answer"><p>{{ item.a }}</p></div>
-        </details>
-      {% endfor %}
-    </section>
-  {% endif %}
-
-  {%- comment -%} Outro CTA block with banner and explicit button {%- endcomment -%}
-  <section class="outro-block">
-    <span class="outro-kicker">9-10 мая · Париж</span>
-    <h2 class="outro-title">Хочешь натренировать это в реальных диалогах?</h2>
-    <p class="outro-text">На мастер-классе мы разбираем твои реальные звонки и переписки. Приносишь 3 ситуации, где сорвалась сделка — разбираем вживую и собираем для тебя личный скрипт.</p>
-    <a class="outro-btn" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium=guide_outro&utm_campaign=ru&utm_content={{ page.slug | url_encode }}">Оставить заявку →</a>
-  </section>
-
-  {%- comment -%} Bottom banner with the masterclass image {%- endcomment -%}
+  {%- comment -%} Soft outro CTA — banner to the masterclass {%- endcomment -%}
   {% include paris-banner.html utm_medium="guide_banner_bottom" %}
 
   {%- comment -%} Author card (E-E-A-T signal for Google) {%- endcomment -%}
@@ -127,3 +106,49 @@ layout: default
   {% endif %}
 
 </article>
+
+{%- comment -%} JSON-LD: Article + FAQPage (if FAQ items provided in frontmatter) {%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | jsonify }},
+  "inLanguage": {{ page.lang | default: "ru" | jsonify }},
+  {% if page.date %}"datePublished": "{{ page.date | date: '%Y-%m-%d' }}",{% endif %}
+  {% if page.modified %}"dateModified": "{{ page.modified | date: '%Y-%m-%d' }}",{% endif %}
+  "author": {
+    "@type": "Person",
+    "name": {{ page.author | default: "Jean-Luc Médéric" | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Jean-Luc Médéric"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page.url | absolute_url }}"
+  }
+}
+</script>
+
+{% if page.faq %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+{% endif %}
