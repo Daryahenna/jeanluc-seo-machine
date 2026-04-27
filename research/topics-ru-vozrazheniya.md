@@ -40,6 +40,46 @@
 
 ---
 
+---
+
+## Живые цитаты с Reddit (EN → для вдохновения, переводить и адаптировать)
+
+### Тема: «У вас дорого / у конкурентов дешевле»
+- **Nathann4288** (r/sales, 65 upvotes): *"When someone tells me I am expensive or 'you're a lot more than your competitor' I lean in to it and say 'we are probably 40% more than our competitor, but there's a reason we have both been around a long time and we still own 80-90% of the market share'"*
+  → [Источник](https://reddit.com/r/sales/comments/1lh2091/youre_pretty_expensive_how_often_do_you_hear_this/)
+
+- **Аноним** (r/sales, 182 upvotes): *"«relative to what?» before telling them you're Ferrari."*
+  → [Источник](https://reddit.com/r/sales/comments/1lh2091/youre_pretty_expensive_how_often_do_you_hear_this/)
+
+- **pumpkin20222002** (r/sales, 21 upvotes): *"Had a client say if he was looking for a grant... His response was 'fuck it I'll burn the place down and walk out.' Never saw that in any overcome objection material"*
+  → [Источник](https://reddit.com/r/sales/comments/1l2q6om/i_built_4_sales_bots_and_tested_them_heres_what/)
+
+### Тема: Клиент пропал после КП / гостинг
+- **Mydral** (r/sales, 242 upvotes): *"This sounds like a process for low priced products. My last deal cycle for $500k consulting services is 5-6 months and 5 face to face meetings. CEO has to approve, board has to be informed..."*
+  → [Источник](https://reddit.com/r/sales/comments/1k8ugxd/customer_says_they_want_to_buy_you_send_a/)
+
+- **bitslammer** (r/sales, 68 upvotes): *"While he was radio silent for 6 months, the competitor was having coffee with the customer every month. Sending industry reports, making introductions and staying top of mind"*
+  → [Источник](https://reddit.com/r/sales/comments/1l90yit/i_keep_watching_companies_lose_massive_deals_to/)
+
+- **Kipping_Deadlift** (r/sales, 56 upvotes): *"I see sellers pop a wad when they hear 'send me a proposal' and then they sprint to meet the mail."*
+  → [Источник](https://reddit.com/r/sales/comments/1k8ugxd/customer_says_they_want_to_buy_you_send_a/)
+
+### Тема: Скрипты и советы по продажам не работают
+- **Пост r/sales** (852 upvotes): *"The reason your sales aren't growing isn't because you need better scripts, more objection handling, or advanced closing techniques. It's because you're following advice from people who haven't sold anything in 10 years. Stop trying to overcome objections — prevent them instead."*
+  → [Источник](https://reddit.com/r/sales/comments/1l0p02c/most_sales_advice_is_garbage/)
+
+- **bitslammer** (r/sales, 154 upvotes): *"Part of the problem with advice is that it's often given with no context. What works for one role or industry will utterly fail for another. I'm in cybersecurity — trust and transparency are paramount."*
+  → [Источник](https://reddit.com/r/sales/comments/1l0p02c/most_sales_advice_is_garbage/)
+
+### Тема: Холодные звонки и проспектинг
+- **Аноним** (r/sales, 387 upvotes, про 300 холодных звонков в день): *"I've seen cock and ball torture less painful than this"*
+  → [Источник](https://reddit.com/r/sales/comments/1lfpq68/300_cold_callsday_day_4_of_30/)
+
+- **Californian-Cdn** (r/sales, 102 upvotes): *"If you can't close people on something like this, we might as well call you 7/11…because you never close."*
+  → [Источник](https://reddit.com/r/sales/comments/1lfpq68/300_cold_callsday_day_4_of_30/)
+
+---
+
 ## Стиль и требования к статьям
 
 - Объём: 1500–2500 слов
