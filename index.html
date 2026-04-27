@@ -1,10 +1,32 @@
 ---
 layout: default
-title: "Гайды"
-description: "Практические руководства по продажам и ИИ."
+title: "Гайды по продажам (RU)"
+description: "Практические гайды по продажам: лиды, возражения, закрытие. Метод Golden Key of Sales."
 lang: ru
 ---
-<script>
-  // Keep Russian as the starting point for now.
-  location.replace("{{ site.baseurl }}/ru/guides/");
-</script>
+
+<h1 class="page-title">Гайды по продажам</h1>
+<p class="page-sub">Короткие практические руководства: лиды, квалификация, возражения, закрытие. В каждом гайде есть следующий шаг и примеры формулировок.</p>
+
+<p style="margin:0 0 14px;">
+  <a class="cta" href="{{ site.baseurl }}/ru/guides/">Открыть каталог гайдов</a>
+</p>
+
+{% assign guides_ru = site.guides | where: "lang", "ru" %}
+
+<div class="grid" id="grid">
+  {% for g in guides_ru %}
+    <a class="card" href="{{ site.baseurl }}{{ g.url }}">
+      <div class="card-media"></div>
+      <div class="card-body">
+        {% if g.category %}
+          <span class="card-kicker">{{ g.category }}</span>
+        {% endif %}
+        <h2 class="card-title">{{ g.title }}</h2>
+        {% if g.description %}
+          <p class="card-desc">{{ g.description }}</p>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>

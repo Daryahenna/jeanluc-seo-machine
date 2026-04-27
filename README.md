@@ -1,4 +1,4 @@
-# jeanluc-seo-machine
+# Jean-Luc-Mederic
 
 Static SEO content hub (GitHub Pages). Purpose: publish many practical guides that rank in search and link to the masterclass landing page.
 
