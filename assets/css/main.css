@@ -344,11 +344,484 @@ main { padding-top: 96px; padding-bottom: 64px; }
   color: var(--accent-foreground);
 }
 
+/* ========================================================================
+   GUIDE PAGE — Medium-style enhancements (inspired by airoomclub/guides)
+   ======================================================================== */
+
+/* Breadcrumbs */
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted-foreground);
+  margin: 0 0 14px;
+}
+.breadcrumbs a {
+  color: var(--muted-foreground);
+  text-decoration: none;
+}
+.breadcrumbs a:hover { color: var(--foreground); }
+.breadcrumbs .sep { opacity: 0.5; }
+
+/* Chips above the title (category, format, level) */
+.guide-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+.guide-chip {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: var(--muted);
+  color: var(--muted-foreground);
+  letter-spacing: 0.01em;
+}
+.guide-chip.is-primary {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+.guide-chip.is-soft {
+  background: rgba(0, 117, 222, 0.08);
+  color: var(--accent);
+}
+
+/* Promise line under H1 */
+.guide-promise {
+  font-size: 19px;
+  line-height: 1.45;
+  color: var(--foreground);
+  margin: 12px 0 18px;
+  max-width: 60ch;
+  font-weight: 500;
+}
+
+/* Meta line (author + date + reading time) */
+.guide-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 0 18px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+  color: var(--muted-foreground);
+  font-size: 13px;
+}
+.guide-meta .author {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--foreground);
+  font-weight: 600;
+}
+.guide-meta .author-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--muted);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.guide-meta .author-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.guide-meta .dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--muted-foreground);
+  opacity: 0.6;
+}
+
+/* Hero block — text-only emoji/character placeholder for now */
+.guide-hero {
+  margin: 8px 0 22px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(0,117,222,0.10) 0%, rgba(0,117,222,0.02) 100%);
+  border: 1px solid var(--border);
+  padding: 32px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  text-align: center;
+}
+.guide-hero-emoji {
+  font-size: 84px;
+  line-height: 1;
+  filter: drop-shadow(0 4px 12px rgba(0,117,222,0.15));
+}
+.guide-hero-caption {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--muted-foreground);
+  font-weight: 500;
+}
+
+/* Lead paragraph — slightly larger, more presence */
+.prose .lead {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--foreground);
+  margin: 18px 0;
+}
+
+/* Bigger H2 with subtle separator */
+.prose h2 {
+  font-size: 26px;
+  margin-top: 38px;
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+.prose h3 {
+  font-size: 19px;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  letter-spacing: -0.015em;
+}
+
+/* Step block — numbered chunky steps like airoomclub */
+.step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 18px 20px;
+  margin: 14px 0;
+  border-radius: var(--radius-lg);
+  background: var(--guide-card);
+  border: 1px solid transparent;
+}
+.step-num {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 15px;
+}
+.step-body { flex: 1 1 auto; }
+.step-body > :first-child { margin-top: 0; }
+.step-body > :last-child { margin-bottom: 0; }
+.step-body h3 { margin-top: 0; }
+
+/* Callout boxes — tip, warn, quote, key */
+.callout {
+  margin: 18px 0;
+  padding: 16px 18px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  background: #fff;
+}
+.callout-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-foreground);
+  margin: 0 0 8px;
+}
+.callout > p:last-child { margin-bottom: 0; }
+.callout > p:first-of-type { margin-top: 0; }
+
+.callout.is-tip {
+  background: rgba(0, 117, 222, 0.05);
+  border-color: rgba(0, 117, 222, 0.2);
+}
+.callout.is-tip .callout-title { color: var(--accent); }
+
+.callout.is-warn {
+  background: rgba(229, 72, 77, 0.05);
+  border-color: rgba(229, 72, 77, 0.25);
+}
+.callout.is-warn .callout-title { color: var(--destructive); }
+
+.callout.is-quote {
+  background: var(--guide-card);
+  border-left: 4px solid var(--foreground);
+  font-style: italic;
+}
+.callout.is-quote .callout-title { font-style: normal; }
+.callout.is-quote cite {
+  display: block;
+  margin-top: 8px;
+  font-style: normal;
+  font-size: 13px;
+  color: var(--muted-foreground);
+}
+
+.callout.is-key {
+  background: linear-gradient(135deg, rgba(0,117,222,0.06) 0%, rgba(0,117,222,0.02) 100%);
+  border-color: rgba(0, 117, 222, 0.2);
+}
+
+/* Dialog block — like a script in a play */
+.dialog {
+  margin: 18px 0;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  background: var(--guide-card);
+  border: 1px solid var(--border);
+}
+.dialog-line {
+  margin: 0 0 10px;
+  padding: 0;
+}
+.dialog-line:last-child { margin-bottom: 0; }
+.dialog-line .who {
+  display: inline-block;
+  font-weight: 700;
+  margin-right: 8px;
+  color: var(--accent);
+  min-width: 70px;
+}
+.dialog-line.is-them .who { color: var(--muted-foreground); }
+.dialog-line .what { color: var(--foreground); }
+
+/* Phrase card — copy-paste ready phrases */
+.phrase-card {
+  display: block;
+  padding: 14px 16px;
+  margin: 10px 0;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--border);
+  font-size: 15px;
+  line-height: 1.5;
+  position: relative;
+}
+.phrase-card::before {
+  content: "💬";
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+/* Anti-example — what NOT to do */
+.bad-example {
+  margin: 14px 0;
+  padding: 14px 16px;
+  border-radius: var(--radius-lg);
+  background: rgba(229, 72, 77, 0.04);
+  border: 1px solid rgba(229, 72, 77, 0.2);
+  border-left: 4px solid var(--destructive);
+}
+.bad-example::before {
+  content: "❌ Так делает большинство и теряет сделку";
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--destructive);
+  margin-bottom: 8px;
+}
+.good-example {
+  margin: 14px 0;
+  padding: 14px 16px;
+  border-radius: var(--radius-lg);
+  background: rgba(0, 117, 222, 0.04);
+  border: 1px solid rgba(0, 117, 222, 0.2);
+  border-left: 4px solid var(--accent);
+}
+.good-example::before {
+  content: "✅ Как стоит";
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+/* Checklist with emoji bullets */
+.prose ul.check {
+  list-style: none;
+  padding-left: 0;
+}
+.prose ul.check li {
+  position: relative;
+  padding-left: 28px;
+  margin: 8px 0;
+}
+.prose ul.check li::before {
+  content: "✅";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Inline CTA — sits inside the article body */
+.inline-cta {
+  display: block;
+  margin: 28px 0;
+  padding: 22px 24px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(0,117,222,0.10) 0%, rgba(0,117,222,0.04) 100%);
+  border: 1px solid rgba(0, 117, 222, 0.25);
+  text-decoration: none;
+  color: var(--foreground);
+  position: relative;
+}
+.inline-cta:hover { opacity: 1; transform: translateY(-1px); transition: transform 0.15s ease; }
+.inline-cta-kicker {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+.inline-cta-title {
+  margin: 0 0 6px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+.inline-cta-desc {
+  margin: 0 0 14px;
+  color: var(--muted-foreground);
+  font-size: 14px;
+}
+.inline-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Outro — soft closing block */
+.outro {
+  margin: 36px 0 18px;
+  padding: 24px;
+  border-radius: var(--radius-xl);
+  background: var(--guide-card);
+  text-align: center;
+}
+.outro h2 {
+  margin-top: 0;
+  font-size: 22px;
+}
+.outro p {
+  color: var(--muted-foreground);
+  max-width: 50ch;
+  margin: 8px auto;
+}
+
+/* Author card */
+.author-card {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin: 28px 0;
+  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid var(--border);
+}
+.author-card-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: var(--muted);
+  overflow: hidden;
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+}
+.author-card-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.author-card-name {
+  font-weight: 700;
+  margin: 0 0 2px;
+  font-size: 15px;
+}
+.author-card-bio {
+  margin: 0;
+  font-size: 13px;
+  color: var(--muted-foreground);
+  line-height: 1.45;
+}
+
+/* Related guides at the bottom */
+.related {
+  margin: 30px 0;
+}
+.related-title {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-foreground);
+  margin: 0 0 12px;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 10px;
+}
+.related-item {
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--guide-card);
+  border: 1px solid transparent;
+  display: block;
+  text-decoration: none;
+  color: var(--foreground);
+  transition: border-color 0.15s ease;
+}
+.related-item:hover { border-color: var(--border); opacity: 1; }
+.related-item-kicker {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-foreground);
+}
+.related-item-title {
+  margin: 4px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Wider article on guide pages — but keep readable line length */
+.prose.is-guide {
+  max-width: 38rem;
+}
+
 @media (min-width: 768px) {
   .nav { display: flex; }
   .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   main { padding-top: 104px; }
+  .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .guide-hero { padding: 48px 32px; min-height: 240px; }
+  .guide-hero-emoji { font-size: 110px; }
 }
 
 @media (min-width: 1024px) {
