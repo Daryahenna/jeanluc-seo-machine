@@ -32,4 +32,8 @@ exclude:
   - SESSION.md
   - FILES.md
   - STYLE.md
+  - CLAUDE.md
   - extracted
+  - prompts
+  - research
+  - .claude
