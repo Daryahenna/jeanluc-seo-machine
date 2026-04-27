@@ -62,26 +62,19 @@ a:hover { opacity: 0.85; }
 
 .cta-banner {
   display: block;
-  margin: 14px 0 18px;
+  margin: 22px auto 24px;
   border-radius: var(--radius-xl);
   overflow: hidden;
   border: 1px solid var(--border);
+  max-width: 100%;
+  background: var(--guide-card);
 }
 
 .cta-banner-img {
   display: block;
   width: 100%;
-  height: 170px;
-  object-fit: cover;
-  /* Our banner source files are tall; crop to keep the CTA visible. */
-  object-position: 50% 72%;
-}
-
-@media (max-width: 640px) {
-  .cta-banner-img {
-    height: 140px;
-    object-position: 50% 78%;
-  }
+  height: auto;
+  object-fit: contain;
 }
 
 .brand {
@@ -809,21 +802,36 @@ main { padding-top: 96px; padding-bottom: 64px; }
   letter-spacing: -0.01em;
 }
 
-/* Wider article on guide pages — but keep readable line length */
+/* Wider article on guide pages — but keep readable line length, centered on all screens */
 .prose.is-guide {
   max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 768px) {
-  .nav { display: flex; }
-  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .footer-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  main { padding-top: 104px; }
-  .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .guide-hero { padding: 48px 32px; min-height: 240px; }
-  .guide-hero-emoji { font-size: 110px; }
+/* FAQ accordion (renders from frontmatter `faq:` field) */
+.faq {
+  margin: 36px 0 24px;
 }
-
-@media (min-width: 1024px) {
-  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.faq h2 {
+  margin: 0 0 14px;
+  font-size: 22px;
+  letter-spacing: -0.02em;
 }
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: #fff;
+  margin: 10px 0;
+  overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+.faq-item[open] {
+  border-color: rgba(0, 117, 222, 0.35);
+  background: rgba(0, 117, 222, 0.02);
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 16px 50px 16px 18px;
+  font-weight: 600;
