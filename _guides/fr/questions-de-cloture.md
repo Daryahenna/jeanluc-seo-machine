@@ -1,5 +1,5 @@
 ---
-title: "« C'est trop cher » — comment répondre sans perdre la vente"
+title: "Clôturer une vente sans pression — 3 types de questions qui marchent"
 description: "Méthode Golden Key : ready-questions, choice-questions et phrase de clôture. Scripts prêts, dialogue réel et pourquoi le mot « contrat » tue 30 % des ventes."
 promise: "En 6 minutes, tu auras un protocole de clôture de vente opérationnel — sans pression, sans manipulation et sans moment gênant avant la phrase « alors, on signe ? »."
 category: "Clôture"
