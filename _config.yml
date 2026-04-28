@@ -61,7 +61,7 @@ languages:
   - code: en
     name: "English"
     short: "EN"
-default_lang: ru
+default_lang: fr
 
 exclude:
   - SESSION.md
