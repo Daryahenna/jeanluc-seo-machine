@@ -1,5 +1,5 @@
 ---
-title: "Client ghosted after the proposal" — what to write and when to call, without being annoying
+title: '"Client ghosted after the proposal" — what to write and when to call, without being annoying'
 description: "3 real reasons clients go quiet after a proposal, a 5-touch sequence over 21 days, and why \"any update on our proposal?\" kills B2B deals."
 promise: "In 7 minutes you'll have a practical follow-up sequence after a proposal — without begging, pressure, or losing the client in silence."
 category: "Objections"

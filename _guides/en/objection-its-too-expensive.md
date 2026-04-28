@@ -1,5 +1,5 @@
 ---
-title: "It's too expensive" — how to respond without losing the deal
+title: '"It''s too expensive" — how to respond without losing the deal'
 description: "5 real reasons clients say \"too expensive\", 8 no-pressure lines you can use, and 5 mistakes that kill deals on the spot."
 promise: "In 7 minutes you'll have a practical script for \"too expensive\" — without discounts, manipulation, or begging."
 category: "Objections"

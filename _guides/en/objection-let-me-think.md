@@ -1,5 +1,5 @@
 ---
-title: "Let me think about it" — how to stop the client from disappearing
+title: '"Let me think about it" — how to stop the client from disappearing'
 description: "5 real reasons behind \"let me think\", a clarification script that saves weeks of back-and-forth, and why \"sure, take your time\" kills deals."
 promise: "In 6 minutes you'll have a practical protocol for \"let me think\" — without begging, pressure, or losing the client in follow-up limbo."
 category: "Objections"

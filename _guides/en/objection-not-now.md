@@ -1,5 +1,5 @@
 ---
-title: "Let's revisit later" — how to keep the deal alive when the client stalls
+title: '"Let''s revisit later" — how to keep the deal alive when the client stalls'
 description: "3 real reasons clients say \"later\", a simple script to lock a date, and why \"Sure, reach out when it's convenient\" kills deals."
 promise: "In 5 minutes you'll have a practical protocol for \"later\" — without pressure, but also without losing the client in stall limbo."
 category: "Objections"

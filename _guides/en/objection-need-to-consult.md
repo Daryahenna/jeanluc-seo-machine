@@ -1,5 +1,5 @@
 ---
-title: "I need to consult with someone" — how to not lose the deal in someone else's hands
+title: '"I need to consult with someone" — how to not lose the deal in someone else''s hands'
 description: "How to bring in a second decision-maker, a ready-to-forward message, and why \"sure, go talk to them\" is usually the end of the deal."
 promise: "In 6 minutes you'll have a practical protocol for \"need to consult\" — with a forwardable text and a 15-minute 3-way call script."
 category: "Objections"

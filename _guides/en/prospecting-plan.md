@@ -1,5 +1,5 @@
 ---
-title: "Prospecting plan" — 5 channels that deliver a steady lead flow
+title: '"Prospecting plan" — 5 channels that deliver a steady lead flow'
 description: "Build a 90-day prospecting plan with no ad budget: 5 channels, a daily rhythm, and one metric that shows real progress."
 promise: "In 7 minutes you'll have a quarter-ready prospecting plan — with a clear daily activity target and a simple funnel."
 category: "Pipeline"

@@ -1,5 +1,5 @@
 ---
-title: "I don't have time" — how to respond without sounding pushy
+title: '"I don''t have time" — how to respond without sounding pushy'
 description: "4 real reasons behind \"no time\", a 60-second cold call script, and why \"it'll only take a minute\" is the most annoying sales line."
 promise: "In 5 minutes you'll have a practical response to \"no time\" — without apologizing, pushing, or losing the conversation in the first 10 seconds."
 category: "Objections"

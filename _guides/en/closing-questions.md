@@ -1,5 +1,5 @@
 ---
-title: "Closing deals without pressure" — 3 types of questions that work
+title: '"Closing deals without pressure" — 3 types of questions that work'
 description: "Golden Key method: ready-questions, choice-questions, and a simple closing phrase. Scripts, a real dialog, and why the word \"contract\" kills 30% of deals."
 promise: "In 6 minutes you'll have a practical closing protocol — without pressure, manipulation, or that awkward pause before \"So… are we signing?\""
 category: "Closing"
